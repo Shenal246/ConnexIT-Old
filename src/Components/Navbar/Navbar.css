@@ -22,7 +22,7 @@
 }
 a {
   color: var(--accent-color);
-  text-decoration: none;
+  text-decoration: none !important;
   transition: 0.3s;
 }
 
@@ -45,6 +45,7 @@ a:hover {
   margin-left: 2.5%;
   border-radius: 50px;
   height: 65px;
+  font-weight: bolder;
 
 }
 
