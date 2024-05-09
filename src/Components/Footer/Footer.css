@@ -5,7 +5,7 @@
     background-color: #4EC3F5;
     padding: 2rem 0;
     margin-top: 15rem;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
   }
 
   .ft-1{
@@ -53,10 +53,22 @@
     cursor: pointer;
   }
 
-  /* .facebook{
-    color: #172c34;
-  } */
+  .facebook{
+    color: #4267B2;
+  }
   
+  .twitter{
+    color: #14171A;
+  }
+
+  .instagram{
+    color:#E4405F ;
+  }
+
+  .linkedIn{
+    color: #0A66C2;
+  }
+
   .Footer h5 {
     color: #f60838;
   }
@@ -72,7 +84,7 @@
 
   
   .resources{
-    padding-top: 9px;   
+    padding-top: 5px;   
   }
   
   .ft-2 ul {
@@ -81,13 +93,12 @@
   }
   
   .ft-2 ul li {
-    /* padding: 0.35rem 0; */
     font-weight: 500;
   }
   
   .ft-2 ul a {
     text-decoration: none;
-    color: rgb(255, 255, 255, 0.564);
+    color: rgba(0, 0, 0, 0.564);
     font-size: 1.06rem;
   }
 
@@ -96,32 +107,6 @@
 
 
   }
-  
-  /* .ft-3 p {
-    font-weight: 500;
-    padding: 0.1rem 0;
-    font-size: 1.06rem;
-  } */
-  
-  /* .ft-3 i {
-    padding-right: 0.5rem;
-  } */
-  
-    /* .Last-footer {
-      background: #137d0b;
-      text-align: right;
-      padding: 1rem 0;
-      
-    
-    } */
-  
-  /* .Last-footer p {
-    margin-bottom: 0;
-    font-size: 1.0rem;
-    font-weight: 700;
-    color: white;
-    padding-right: 1%;
-  } */
 
   .callIcon1{
     margin-top: 2%;
@@ -148,5 +133,5 @@
 }
 
 .txt{
-    color: rgba(255, 255, 255, 0.564);
+    color: rgba(0, 0, 0, 0.564);
 }
