@@ -49,7 +49,7 @@ const Footer = () => {
                                 <i className="fa-brands fa-x-twitter twitter"></i>
                                 <i className="fab fa-instagram instagram"></i>
                                 <i className="fab fa-linkedin-in linkedIn"></i>
-                                <i className="fa-brands fa-square-youtube youtube"></i>
+                                <i class="fa-brands fa-square-youtube youtube"></i>
                             </div>
                         </div>
                         <div className=" col-lg-4  ft-1 address2">
@@ -61,7 +61,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-           
+            {/* <div className='Last-footer'>
+                <p>Design By Connex IT</p>
+            </div> */}
         </>
     );
 };

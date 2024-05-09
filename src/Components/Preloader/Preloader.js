@@ -11,8 +11,8 @@ const Preloader = () => {
 
   return loading ? (
     <div className="preloader">
-      
-      
+      {/* Add your loading spinner GIF */}
+      <img src="Spin@1x-1.0s-200px-200px.gif" alt="Loading spinner" />
     </div>
   ) : null;
 };
