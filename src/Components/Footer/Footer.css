@@ -51,6 +51,7 @@
     color: #fff;
     transition: 0.6s;
     cursor: pointer;
+    
   }
 
   .facebook{
@@ -67,6 +68,10 @@
 
   .linkedIn{
     color: #0A66C2;
+  }
+
+  .youtube{
+    color: rgba(255, 0, 0, 0.664);
   }
 
   .Footer h5 {
