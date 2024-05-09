@@ -44,16 +44,15 @@ const Footer = () => {
                     </div>
                     <div className="row">
                         <div className="col-md-6 col-lg-5  ft-1">
-                            <div className="footer-icons img">
+                            <div className="footer-icons img icons">
                                 <i className="fab fa-facebook facebook"></i>
                                 <i className="fa-brands fa-x-twitter twitter"></i>
                                 <i className="fab fa-instagram instagram"></i>
                                 <i className="fab fa-linkedin-in linkedIn"></i>
-                                {/* <i className="fa-brands fa-youtube youtube"></i> */}
                                 <i class="fa-brands fa-square-youtube youtube"></i>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4  ft-1 address2">
+                        <div className=" col-lg-4  ft-1 address2">
                         </div>
                         <div className="col-md-6 col-lg-3  ft-2 ownerRights">
                             <h6>Developed by ConnexIT</h6>
