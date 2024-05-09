@@ -23,7 +23,7 @@ function WhoweareSection() {
                 </div>
 
 
-                <div className="row">hj</div>
+                <div className="row">hjdfghj</div>
 
               </div>
 
