@@ -92,13 +92,6 @@ hr {
 }
 
 .conwh {
-    background-color: rgb(185, 181, 181);
+    background-color: rgba(185, 181, 181, 0.5);
     border-radius: 10px;
-    opacity: 0.5;
-    z-index: -900;
-}
-
-.whoBack{
-    z-index: 900;
-
 }
