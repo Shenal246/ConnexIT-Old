@@ -4,6 +4,7 @@ import Logo from '../../images/ConnexIT.png';
 import {BrowserRouter as Router,Route,Routes,NavLink } from "react-router-dom";
 import About from '../About/About';
 import Home from '../Home/Home';
+import Events from '../Events&News/Events';
 function Navbar() {
 
   useEffect(() => {
@@ -88,7 +89,7 @@ function Navbar() {
           <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">About Us</a></li></NavLink>
           <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Products</a></li></NavLink>
           <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Solutions</a></li></NavLink>
-          <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Event & News</a></li></NavLink>
+          <NavLink to="/Events&News" activeClassName='active-link' exact><li><a  className="">Event & News</a></li></NavLink>
           <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Portal</a></li></NavLink>
           <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Countries</a></li></NavLink>
              
@@ -105,6 +106,7 @@ function Navbar() {
     
        <Route path="" exact Component={Home}></Route>
        <Route path="/About" exact Component={About}></Route>
+       <Route path="/Events&News" exact Component={Events}></Route>
        
      </Routes>
  

@@ -5,7 +5,14 @@ function WhoweareSection() {
     <section id="about" className="section about">
       <div className="container">
         <div className="row gy-3">
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div className="row gy-3">
+                <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr/></div>
+                <div className="col-4" data-aos="fade-up" data-aos-delay="100"><h3 id='whoweareText'>Who we are</h3></div>
+                <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr/></div>
+            </div>
+
+            <div className="row gy-3">
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/about-img.svg" alt="" className="img-fluid" />
           </div>
           <div className="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -33,6 +40,11 @@ function WhoweareSection() {
               </p>
             </div>
           </div>
+
+            </div>
+
+            
+          
         </div>
       </div>
     </section>
