@@ -51,6 +51,27 @@
 
 #whoweareText {
     text-align: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0.9;
+}
+
+@media (max-width: 425px) {
+    #whoweareText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    #whoweareText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #whoweareText {
+        font-size: 21px;
+    }
 }
 
 hr {
@@ -58,5 +79,26 @@ hr {
     background-color: white;
     border: none;
     border-radius: 10px;
+
+}
+
+#whText {
+    color: #499FEE;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.conwh {
+    background-color: rgb(185, 181, 181);
+    border-radius: 10px;
+    opacity: 0.5;
+    z-index: -900;
+}
+
+.whoBack{
+    z-index: 900;
 
 }
