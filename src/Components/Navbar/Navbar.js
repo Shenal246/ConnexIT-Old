@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import './Navbar.css';
 import Logo from '../../images/ConnexIT.png';
-
+import {BrowserRouter as Router,Route,Routes,NavLink } from "react-router-dom";
+import About from '../About/About';
+import Home from '../Home/Home';
 function Navbar() {
 
   useEffect(() => {
@@ -74,25 +76,41 @@ function Navbar() {
   }, []); // empty dependency array ensures that this effect runs only once on component mount
 
   return (
+    <>
+    <Router>
     <header id="header" className="header d-flex align-items-center sticky-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
         <a href="index.html" className="logo d-flex align-items-center me-auto">
-          <img src={Logo} alt="Logo" />
+        <NavLink to="" activeClassName='active-link' exact><img src={Logo} alt="Logo" /></NavLink>
         </a>
         <nav id="navmenu" className="navmenu">
           <ul>
-            <li><a href="index.html#hero" className="">About Us</a></li>
-            <li><a href="index.html#about">Products</a></li>
-            <li><a href="index.html#services">Solutions</a></li>
-            <li><a href="index.html#team">Event & News</a></li>
-            <li><a href="index.html#contact">Portal</a></li>
-            <li><a href="index.html#contact">Countries</a></li>
+          <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">About Us</a></li></NavLink>
+          <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Products</a></li></NavLink>
+          <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Solutions</a></li></NavLink>
+          <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Event & News</a></li></NavLink>
+          <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Portal</a></li></NavLink>
+          <NavLink to="/About" activeClassName='active-link' exact><li><a  className="">Countries</a></li></NavLink>
+             
+        
           </ul>
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
         <a className="btn-getstarted" href="index.html#about">Contact Us</a>
       </div>
     </header>
+     
+     
+     <Routes>
+    
+       <Route path="" exact Component={Home}></Route>
+       <Route path="/About" exact Component={About}></Route>
+       
+     </Routes>
+ 
+     </Router>
+
+     </>
   );
 }
 
