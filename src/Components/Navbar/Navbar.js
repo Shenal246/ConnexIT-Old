@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Navbar.css';
-import Logo from '../../images/Final Logo@8x.png';
+import Logo from '../../images/ConnexIT.png';
 
 function Navbar() {
 
@@ -38,7 +38,7 @@ function Navbar() {
 
     // Toggle mobile nav dropdowns
     document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-      navmenu.addEventListener('click', function(e) {
+      navmenu.addEventListener('click', function (e) {
         if (document.querySelector('.mobile-nav-active')) {
           e.preventDefault();
           this.parentNode.classList.toggle('active');
@@ -61,7 +61,7 @@ function Navbar() {
         });
       });
       document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-        navmenu.removeEventListener('click', function(e) {
+        navmenu.removeEventListener('click', function (e) {
           if (document.querySelector('.mobile-nav-active')) {
             e.preventDefault();
             this.parentNode.classList.toggle('active');
