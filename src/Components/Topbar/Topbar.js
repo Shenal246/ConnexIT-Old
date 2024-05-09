@@ -12,8 +12,8 @@ const Topbar = () => {
                     <i className="bi bi-phone d-flex align-items-center ms-4"><span>011 2254877</span></i>
                 </div>
                 <div className="social-links d-flex d-md-flex align-items-center">
-                    <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
-                    <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                    <a href="#" target="_blank" className="twitter"><i className="fa-brands fa-x-twitter twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/connexinformationtechnologies/mycompany/" target="_blank" className="linkedin"><i className="fab fa-linkedin-in linkedIn"></i></a>
                 </div>
             </div>
         </section>

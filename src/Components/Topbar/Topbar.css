@@ -37,8 +37,11 @@
     line-height: 0;
     transition: 0.3s;
     margin-left: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
   }
   
   #topbar .social-links a:hover {
-    color: white;
+    background-color: rgb(35, 116, 27);
   }
