@@ -1,0 +1,152 @@
+/* If using CSS */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.Footer {
+    background-color: #4EC3F5;
+    padding: 2rem 0;
+    margin-top: 15rem;
+    color: aliceblue;
+  }
+
+  .ft-1{
+    text-align: center !important;
+  }
+
+  .ft-2{
+    text-align: center;
+  }
+
+  
+  .ft-1 h3 {
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 0.5rem 0;
+  }
+  .img{
+    margin-right: 3%;
+    color: white;
+  }
+
+  .img2{
+    margin-right: 3%;
+    color: white;
+  }
+  
+  .ft-1 p {
+    font-weight: 500;
+  }
+
+
+  .footer-icons i {
+    padding: 0.4rem 0.5rem;
+    background: #efefef;
+    /* color: #278417; */
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    font-size: large;
+  }
+  
+  .footer-icons i:hover {
+    background: #11830d;
+    color: #fff;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+
+  /* .facebook{
+    color: #172c34;
+  } */
+  
+  .Footer h5 {
+    color: #f60838;
+  }
+
+  .address2{
+    /* margin-left: 1%; */
+    padding-top: 2px;
+  }
+
+  .iconrow{
+    padding: 4px;
+  }
+
+  
+  .resources{
+    padding-top: 9px;   
+  }
+  
+  .ft-2 ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .ft-2 ul li {
+    /* padding: 0.35rem 0; */
+    font-weight: 500;
+  }
+  
+  .ft-2 ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.564);
+    font-size: 1.06rem;
+  }
+
+  .ownerRights{
+    color: #397c97;
+
+
+  }
+  
+  /* .ft-3 p {
+    font-weight: 500;
+    padding: 0.1rem 0;
+    font-size: 1.06rem;
+  } */
+  
+  /* .ft-3 i {
+    padding-right: 0.5rem;
+  } */
+  
+    /* .Last-footer {
+      background: #137d0b;
+      text-align: right;
+      padding: 1rem 0;
+      
+    
+    } */
+  
+  /* .Last-footer p {
+    margin-bottom: 0;
+    font-size: 1.0rem;
+    font-weight: 700;
+    color: white;
+    padding-right: 1%;
+  } */
+
+  .callIcon1{
+    margin-top: 2%;
+    margin-right: 2%;
+    color: white;
+    
+  }
+
+  .callIcon2{
+    margin-top: 1%;
+    margin-right: 3%; 
+    color: white;
+  }
+
+  .ft-2 h3 {
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 0.5rem 0;
+  }
+  
+  /* CSS to increase line gaps only for .ft-1 */
+.ft-1  {
+    line-height: 1.9; /* Adjust this value as needed */
+}
+
+.txt{
+    color: rgba(255, 255, 255, 0.564);
+}
