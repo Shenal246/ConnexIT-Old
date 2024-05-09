@@ -10,8 +10,10 @@
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgba(var(--accent-color-rgb), 0.25);
+}
 
-
+h3{
+    color: white !important;
 }
 
 .hero-video {
@@ -32,6 +34,7 @@
     font-weight: 700;
     line-height: 56px;
     z-index: 100;
+    color: white;
 
 }
 
@@ -45,10 +48,10 @@
 }
 
 .hero .btn-get-started {
-    color: var(--contrast-color);
-    background: #129001;
+    color: white;
+    background: #00A0E4;
     font-family: var(--heading-font);
-    font-weight: 400;
+    font-weight: bolder;
     font-size: 15px;
     letter-spacing: 1px;
     display: inline-block;
@@ -122,4 +125,13 @@
     100% {
         transform: translateY(-10px);
     }
+}
+
+/* Connex text */
+.Connexcon{
+    color: #00A0E4;
+}
+
+.Connexnex{
+    color: #20B14A;
 }
