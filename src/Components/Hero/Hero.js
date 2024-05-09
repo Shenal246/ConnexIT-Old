@@ -12,12 +12,12 @@ function HeroSection() {
 
 
 
-            <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <div className="row gy-4">
+          <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             
-            <div class="d-flex">
-              <a href="index.html#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <div className="d-flex">
+              <a href="index.html#about" className="btn-get-started">Get Started</a>
+              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
           </div>
         
