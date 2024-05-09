@@ -17,7 +17,7 @@ function WhoweareSection() {
           </div>
           <div className="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div className="about-content ps-0 ps-lg-3">
-              <h3>Who we are ..</h3>
+              <h3></h3>
               <p className="fst-italic"></p>
               <ul>
                 <li>

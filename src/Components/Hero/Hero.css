@@ -115,6 +115,9 @@ h3{
     .hero .btn-watch-video {
         font-size: 13px;
     }
+    .settop{
+        margin-top: -20%;
+    }
 }
 
 @keyframes up-down {
