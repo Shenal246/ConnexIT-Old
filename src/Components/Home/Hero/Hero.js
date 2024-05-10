@@ -1,5 +1,5 @@
 import './Hero.css';
-import Logo from '../../images/heropng.png';
+import Logo from '../../../images/heropng.png';
 function HeroSection() {
   return (
     <section id="hero" className="section hero">
