@@ -1,6 +1,6 @@
 
-import HeroSection from '../Hero/Hero';
-import WhoweareSection from '../Who_we_are/Whoweare';
+import HeroSection from '../Home/Hero/Hero';
+import WhoweareSection from '../Home/Who_we_are/Whoweare';
 
 
 function Home() {
