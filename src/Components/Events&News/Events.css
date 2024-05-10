@@ -1,6 +1,13 @@
 .cards{
     padding-top: 2%;
+    
 }
+
+/* Add this style to your Events.css file */
+.red-background {
+    background-color: red;
+}
+
 .crd{
    
     margin-top: 7px;
@@ -9,6 +16,7 @@
 .card1{
     background-color: #01066B;
     padding: 2px;
+    
 }
 
 .textclr{
