@@ -6,6 +6,8 @@
     padding: 2rem 0;
     margin-top: 15rem;
     color: rgb(0, 0, 0);
+    bottom: 0;
+    position:relative
   }
 
   .ft-1{
