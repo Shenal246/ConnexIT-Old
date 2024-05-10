@@ -2,11 +2,24 @@
 @media (min-width: 600px) {
     .center{
         margin-left:10%;
+    }.container{
+      width: 50%;
+    }
+    #t1{
+      background-color: #10055b25;
+      padding: 2%;
+      border-bottom: 3px solid green;
+    }
+    #t2{
+      background-color: #21025a54;
+      padding: 2%;
+      border-bottom: 3px solid green;
     }
     .headimg{
-        width: 100%;
+        width: 70%;
         margin-top: 5%;
         border-radius: 50px;
+        align-items: center;
         border: 3px solid #4EC3F5;
     }
     .story{
@@ -21,18 +34,51 @@
         border-right: 2px solid  #4EC3F5;
         border-radius: 50px;
     }
+    .slider{
+      margin: auto;
+      width: 60%;
+      height: 100%;
+      background-color: #f9f9f921;
+      align-items: center;
+      padding: 1%;
+      border-radius: 50px;
+      margin-top: 2%;
+    }
+    .slider .sl img{
+      width: 60%;
+      margin-left: 20%;
+      border-radius: 40px;
+      border: 3px solid #4EC3F5;
+
+    }
+    .slider .sl h3{
+      margin-top: 10%;
+      margin-left: -15%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .slider .sl h4{
+      margin-top: 5%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: italic;
+      color: rgb(4, 137, 8);
+    }
+    .slider .sl p{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: italic;
+      color: rgb(4, 137, 8);
+    }
     .sld{
-        width: 90%;
+        width: 80%;
         background-color: rgba(109, 109, 131, 0.652);
         margin: 2%;
         padding: 2%;
         border-radius: 50px;
-        margin-left: 5%;
-        
+        float: left;
     }
     .sld .im{
         width: 50%;
         margin: 2%;
+        float: left;
     }
     .sld .im img{
         width: 100%;
@@ -44,7 +90,7 @@
     .sld .qut{ 
         width: 130%;
         margin-left: -40%;
-       
+        float: left;
 
     }
     .sld .qut .qt{

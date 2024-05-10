@@ -71,74 +71,79 @@ const About = () => {
       };
     return ( 
     <>
-        <div class="container">
-            <div className='center' data-aos="fade-up" data-aos-delay="200">
-            <div class="row">
-                <div class="col-sm" >
-                    <img src={headlogo} className='headimg'></img>
+        <section id='t1'>
+            <div class="container">
+                <div className='center' data-aos="fade-up" data-aos-delay="200">
+                <div class="row">
+                    <div class="col-sm" >
+                        <img src={headlogo} className='headimg'></img>
+                    </div>
+                    <div class="col-sm">
+                        <div className='story'>
+                            <h1>Our Story</h1>
+                            <p>Over a decade in the industry, we've empowered over 100 partners with products from 60+ vendors, serving countless successful customers.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
-                     <div className='story'>
-                        <h1>Our Story</h1>
-                        <p>Over a decade in the industry, we've empowered over 100 partners with products from 60+ vendors, serving countless successful customers.</p>
-                     </div>
+                <div class="row">
+                    <div class="col-sm ">
+                    <div className='story bdround'>
+                            <h1>Our Vision</h1>
+                            <p>Our vision is to be the most innovative distributor of it products in the country by developing and working closely with our valued channels through effective marketing and proficient support, thus enabling our partners and the company to grow together.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div className='story bdround'>
+                            <h1>Our Mission</h1>
+                            <p>Our vision is to be the most innovative distributor of it products in the country by developing and working closely with our valued channels through effective marketing and proficient support, thus enabling our partners and the company to grow together.</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                <div className='story bdround'>
-                        <h1>Our Vision</h1>
-                        <p>Our vision is to be the most innovative distributor of it products in the country by developing and working closely with our valued channels through effective marketing and proficient support, thus enabling our partners and the company to grow together.</p>
-                     </div>
-                </div>
-                <div class="col-sm">
-                     <div className='story bdround'>
-                        <h1>Our Mission</h1>
-                        <p>Our vision is to be the most innovative distributor of it products in the country by developing and working closely with our valued channels through effective marketing and proficient support, thus enabling our partners and the company to grow together.</p>
-                     </div>
-                </div>
-            </div>
+        </section>
+        
             
-          
-       
-                    <Slider {...settings} className='sldr'>
-                 
-                    {data.map((d)=>( <>
-                        <div className='sld'>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <div className='im'>
-                                        <img src={d.img}></img>
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <div className='qut'>
-                                        <p className='qt'>{d.quote}</p>
-                                        <div className='nmt'>
-                                            <h4>{d.name}</h4>
-                                            <p>{d.post}</p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                
+         <section id='t2'>
+         
+
+
+
+            <div className='slider'>
+                <Slider {...settings}>
+            
+                        {data.map((d)=>( <>
+                        
+                            <div className='sl bdround'>
+                    <div class="row">
+                        <div class="col-sm ">
+                            <img src={d.img}></img>
+                        </div>
+                        <div class="col-sm ">
+                            <h3>{d.quote}</h3>
+                            <div>
+                                <h4>{d.name}</h4>
+                                <p>{d.post}</p>
                             </div>
                         </div>
-                       
-                           
-                           
-                           </div>
-                            </>
-                        ))}
-                       
-                        </Slider>
-                        
+                    </div>    
+
                 </div>
-            
+                        </>
+                            
+                        ))}
+                
+                 </Slider>
+                
+
+            </div>
+        
            
-            
-        </div>
+                    
+         </section> 
+       
+                   
+                        
     </> );
 
     
