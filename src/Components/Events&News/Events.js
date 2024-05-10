@@ -6,6 +6,17 @@ import card1 from '../../images/news.png'; // Assuming card1 is the variable hol
 const Events = () => {
     return (
         <div className="container">
+            <div className='row'>
+            <div className="row gy-3 text">
+            <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
+            <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='EventsText'>Events & News</p></div>
+            <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
+          </div>
+
+
+
+            </div>
+
             {/* first event row */}
             <div className="row cards">  
                 <div className="col-lg-4 ">

@@ -61,9 +61,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className='Last-footer'>
-                <p>Design By Connex IT</p>
-            </div> */}
+            
         </>
     );
 };
