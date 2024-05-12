@@ -7,8 +7,8 @@
     margin-top: 15rem;
     color: rgb(255, 255, 255);
     background-image: url('../../images/footer.png');
-  background-color: #021e3aeb;
-  background-size: cover;
+    background-color: #021e3aeb;
+    background-size: cover;
 
    
     position: relative;
@@ -122,7 +122,7 @@
   }
 
   .ownerRights{
-    color: #397c97;
+    color: #7aa4b1;
 
 
   }
