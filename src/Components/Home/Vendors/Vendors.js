@@ -35,7 +35,6 @@ const Vendors = () => {
         <div className='col-lg-10'>
           <Swiper
             effect={'coverflow'}
-
             grabCursor={true}
             centeredSlides={true}
             autoplay={{
@@ -54,6 +53,16 @@ const Vendors = () => {
             modules={[EffectCoverflow, Pagination, Navigation, Autoplay,]}
             className="mySwiper"
           >
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={ven1}></img>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={ven1}></img>
+              </div>
+            </SwiperSlide>
             <SwiperSlide>
               <div className='image-container'>
                 <img src={ven1}></img>

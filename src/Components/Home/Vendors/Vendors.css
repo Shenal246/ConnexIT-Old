@@ -17,6 +17,7 @@ body {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .swiper-slide {
@@ -27,6 +28,11 @@ body {
 }
 
 .swiper-slide div {
+  display: block;
+  width: 100%;
+}
+
+.swiper-slide div img{
   display: block;
   width: 100%;
 }
