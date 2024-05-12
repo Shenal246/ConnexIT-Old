@@ -32,7 +32,7 @@ body {
   width: 100%;
 }
 
-.swiper-slide div img{
+.swiper-slide div img {
   display: block;
   width: 100%;
 }
@@ -40,6 +40,19 @@ body {
 .vendors {
   padding-top: 50px;
 }
+
+/* Vedor Logos */
+
+.image-container {
+  background-color: rgb(255, 255, 255);
+  width: 25%;
+  text-align: center;
+  border-radius: 10%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+/* Vendors Text */
 
 .vendorText {
   text-align: center;
@@ -55,13 +68,23 @@ body {
   opacity: 0.9;
 }
 
-/* Vedor Logos */
+@media (max-width: 640px) {
+  #ourVendorsText {
+      font-size: 25px;
+  }
 
-.image-container {
-  background-color: rgb(235, 228, 228);
-  width: 25%;
-  text-align: center;
-  border-radius: 25px;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  .hero p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+  }
+
+  .vendorText{
+    font-size: 95%;
+  }
+
+  .swiper {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 }

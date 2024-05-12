@@ -1,20 +1,32 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/swiper-bundle.css'; // Import Swiper bundle CSS
 
 import './Vendors.css';
 
+// Import your image files
 import ven1 from '../../../images/vendorLogos/1.png';
+import ven2 from '../../../images/vendorLogos/2.png';
+import ven3 from '../../../images/vendorLogos/3.png';
+import ven4 from '../../../images/vendorLogos/4.png';
+import ven5 from '../../../images/vendorLogos/5.png';
+import ven6 from '../../../images/vendorLogos/6.png';
+import ven7 from '../../../images/vendorLogos/7.png';
+import ven8 from '../../../images/vendorLogos/8.png';
+import ven9 from '../../../images/vendorLogos/9.png';
+import ven10 from '../../../images/vendorLogos/10.png';
+import ven11 from '../../../images/vendorLogos/11.png';
+import ven12 from '../../../images/vendorLogos/12.png';
+import ven13 from '../../../images/vendorLogos/13.webp';
+import ven14 from '../../../images/vendorLogos/14.png';
+// Add import statements for all your images here...
 
-// import required modules
-import { EffectCoverflow, Pagination, Navigation, Autoplay, } from 'swiper/modules';
-
+const imagePaths = [ven1, ven2, ven3, ven4, ven5, ven6, ven7, ven8, ven9, ven10, ven11, ven12, ven13, ven14]; // Add all your image paths to this array
 
 const Vendors = () => {
   return (
@@ -50,70 +62,22 @@ const Vendors = () => {
               modifier: 2.5,
             }}
             pagination={true}
-            modules={[EffectCoverflow, Pagination, Navigation, Autoplay,]}
+            modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='image-container'>
-                <img src={ven1}></img>
-              </div>
-            </SwiperSlide>
+            {imagePaths.map((path, index) => (
+              <SwiperSlide key={index}>
+                <div className='image-container'>
+                  <img src={path} alt={`ven${index}`} />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
         <div className='col-lg-1'></div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Vendors
+export default Vendors;
