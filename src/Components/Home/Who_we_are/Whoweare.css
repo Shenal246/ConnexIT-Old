@@ -101,14 +101,23 @@ hr {
     background-color: aqua;
     width: 10px;
     border-radius: 15px;
+    text-align: center;
 
 }
 
 .techcontainer {
     text-align: center;
+    padding-bottom: 5%;
 }
 
 .techimage {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    width: 70% !important;
+}
+
+.techText{
+    font-size:large;
+    color: rgb(4, 29, 61);
+    font-weight: bold;
 }
