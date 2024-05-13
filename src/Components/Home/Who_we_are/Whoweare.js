@@ -1,11 +1,28 @@
 import './Whoweare.css'
+import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
 import Dis from '../../../images/tech/Distributer.png';
 import Con from '../../../images/tech/Consultancy.png';
 import Tra from '../../../images/tech/Training.png';
 import Tac from '../../../images/tech/TAC.png';
 
+import Distribution from '../../../images/techImages/distribution.png'
+import Consultancy from '../../../images/techImages/consultancy.png';
+import Training from '../../../images/techImages/Training.png';
+import TacService from '../../../images/techImages/Tac.png';
+
+
 function WhoweareSection() {
+  const [disShow, setDisShow] = useState(false);
+  const [conShow, setConShow] = useState(false);
+  const [traShow, setTraShow] = useState(false);
+  const [tacShow, setTacShow] = useState(false);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <section id="about" className="section about">
       <div className="container conwh">
@@ -22,11 +39,11 @@ function WhoweareSection() {
 
               <div className='row gy-3'>
                 <div className='col-2'></div>
-                <div className='col-lg-4 welogos'>
+                <div className='col-lg-4 welogos' onClick={() => setDisShow(true)}>
                   <div className='row'><img src={Dis} className='techimage' /></div>
                   <div className='row'><p className='techText'>Distribution</p></div>
                 </div>
-                <div className='col-lg-4 welogos'>
+                <div className='col-lg-4 welogos' onClick={() => setConShow(true)}>
                   <div className='row'><img src={Con} className='techimage' /></div>
                   <div className='row'><p className='techText'>Consultancy</p></div>
                 </div>
@@ -34,11 +51,11 @@ function WhoweareSection() {
 
               <div className='row gy-3'>
                 <div className='col-2'></div>
-                <div className='col-lg-4 welogos'>
+                <div className='col-lg-4 welogos' onClick={() => setTraShow(true)}>
                   <div className='row'><img src={Tra} className='techimage' /></div>
                   <div className='row'><p className='techText'>Training</p></div>
                 </div>
-                <div className='col-lg-4 welogos'>
+                <div className='col-lg-4 welogos' onClick={() => setTacShow(true)}>
                   <div className='row'><img src={Tac} className='techimage' /></div>
                   <div className='row'><p className='techText'>TAC Support</p></div>
                 </div>
@@ -53,40 +70,153 @@ function WhoweareSection() {
               </div>
 
 
-              <div className="row">hjdfghj</div>
+              <div className="row">
+                <div className='col-lg'><div className='row'></div><div className='row'></div></div>
+                <div className='col-lg'><div className='row'></div><div className='row'></div></div>
+                <div className='col-lg'><div className='row'></div><div className='row'></div></div>
+                <div className='col-lg'><div className='row'></div><div className='row'></div></div>
+              </div>
 
             </div>
-
           </div>
-
-
-
         </div>
       </div>
 
-      
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
-</button>
+      {/*Distribution Model */}
+      <Modal
+        size="lg"
+        show={disShow}
+        onHide={() => setDisShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+        className='disModel'
+      >
+        <Modal.Header closeButton className='model-header'>
+          <Modal.Title id="example-modal-sizes-title-lg">
+            Distribution
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className='model-body'>
+          <div className='row'>
+            <div className='col-lg'>
+              <p className='model-content-text'>Discover our tailor-made solutions, designed to meet end-users requirements with the most competitive, best-fitted answers for their unique needs.</p>
+            </div>
 
+            <div className='col-lg'>
+              <img src={Distribution} className='model-image' />
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer className='model-footer'>
+          <Button onClick={handleClose} className='contactUs-button'>
+            Contact Us
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
+      {/*Consultancy Model */}
+      <Modal
+        size="lg"
+        show={conShow}
+        onHide={() => setConShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+        className='disModel'
+      >
+        <Modal.Header closeButton className='model-header'>
+          <Modal.Title id="example-modal-sizes-title-lg">
+            Consultancy
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className='model-body'>
+          <div className='row'>
+            <div className='col-lg'>
+              <p className='model-content-text'>Consultancy service is a unique solution offered by Connex, ensuring the most suitable and competitive solution for an end-user’s requirements. We offer an integrated customized service of consultancy skills that grows and changes with business and customer needs.
+                Connex consultancy provides highly qualified personnel to complement the skills of your own team. Our consultants and engineers act on your behalf to ensure the smooth running of customers’ installation, in a timely manner and according to budget implications.</p>
+            </div>
+
+            <div className='col-lg'>
+              <img src={Consultancy} className='model-image' />
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer className='model-footer'>
+          <Button onClick={handleClose} className='contactUs-button'>
+            Contact Us
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      {/*Training Model */}
+      <Modal
+        size="lg"
+        show={traShow}
+        onHide={() => setTraShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+        className='disModel'
+      >
+        <Modal.Header closeButton className='model-header'>
+          <Modal.Title id="example-modal-sizes-title-lg">
+            Training
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className='model-body'>
+          <div className='row'>
+            <div className='col-lg'>
+              <p className='model-content-text'>
+                We believe in the popular adage we are all lifelong learners, hence we strive to create a culture of learning where our employees are afforded numerous opportunities to further their professional development. We also groom our employees for future leadership positions from within the Company.
+                <br />
+                In a fast moving and developing digital world, the Technology industry experiences changes rapidly; therefore we realize the need to keep pace with attrition rates and staying on the edge of the most advanced technologies. Our extensive training and professional development of programmers have contributed to employee retention.
+                <br />
+                Our training and workshop facility enables us to conduct knowledge of product technology awareness sessions, assist with vendors workshops & award certifications.
+              </p>
+            </div>
+
+            <div className='col-lg'>
+              <img src={Training} className='model-image' />
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer className='model-footer'>
+          <Button onClick={handleClose} className='contactUs-button'>
+            Contact Us
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      {/*TAC Support Model */}
+      <Modal
+        size="lg"
+        show={tacShow}
+        onHide={() => setTacShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+        className='disModel'
+      >
+        <Modal.Header closeButton className='model-header'>
+          <Modal.Title id="example-modal-sizes-title-lg">
+            TAC Support
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className='model-body'>
+          <div className='row'>
+            <div className='col-lg'>
+              <p className='model-content-text'>
+                Connex offers 24/7 TAC services, with an array of certified, technical and qualified professionals. We are proud of Service Level Agreement levels of Bronze, Silver, Gold and Platinum.<br />
+                You will get to engage with your Product Manager who will share his understanding of the product, so you are fully informed and equipped with knowledge and the technical know how to use the product. Product research updates will also be shared along with information about deal registration.<br />
+                Connex professional service and technical support service are available for our channel partners only. Please contact.
+              </p>
+            </div>
+
+            <div className='col-lg'>
+              <img src={TacService} className='model-image' />
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer className='model-footer'>
+          <Button onClick={handleClose} className='contactUs-button'>
+            Contact Us
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
     </section>
   );
 }

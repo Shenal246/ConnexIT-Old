@@ -92,17 +92,20 @@ hr {
 }
 
 .conwh {
-    background-color: rgba(185, 181, 181, 0.5);
+    background-color: rgba(185, 181, 181, 0);
     border-radius: 10px;
 }
 
 .welogos {
     margin: 10px;
-    background-color: aqua;
+    background-color: rgb(130, 163, 163);
     width: 10px;
     border-radius: 15px;
     text-align: center;
+}
 
+.welogos:hover {
+    cursor: pointer;
 }
 
 .techcontainer {
@@ -120,4 +123,44 @@ hr {
     font-size:large;
     color: rgb(4, 29, 61);
     font-weight: bold;
+}
+
+/* Model */
+.disModel{
+    background-color: rgba(108, 204, 204, 0.2);
+}
+
+.model-header{
+    background-color: #01066B;
+    color: white;
+}
+
+.model-body{
+    background-color: #C9CBF9;
+}
+
+.model-content-text{
+    font-weight: bolder;
+}
+
+.model-image{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+    height: auto;
+}
+
+.contactUs-button{
+    background-color: #01066B !important;
+    border: none;
+    color: white;
+    width: 20%;
+}
+
+.contactUs-button:hover{
+    background-color: #0810af !important;
+}
+
+.model-footer{
+    background-color: #C9CBF9 !important;
 }
