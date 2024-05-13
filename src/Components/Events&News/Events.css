@@ -92,3 +92,11 @@
 .text{
     padding-top: 2%;
 }
+
+.modalClr{
+    background-color: #2b2d6366 !important;
+}
+
+.close{
+    background-color: #ffffff !important;
+}
