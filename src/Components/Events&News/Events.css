@@ -100,3 +100,21 @@
 .close{
     background-color: #ffffff !important;
 }
+
+@media (max-width: 425px) {
+    #EventsText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    #EventsText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #EventsText {
+        font-size: 21px;
+    }
+}
