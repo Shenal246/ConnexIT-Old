@@ -15,7 +15,9 @@ const Contact = () => {
             </div>
             <div className="row">
                 <div className="col-md-6">
+                    
 
+                    {/* <form action='mailto: rivinduamarasinghe1234@gmail.com'> */}
                     <div class="form-floating mb-3">
                         <input type="name" class="form-control" id="floatingInput" placeholder="name" />
                         <label for="floatingInput">Name</label>
@@ -43,7 +45,12 @@ const Contact = () => {
                             <button type="submit" className="btn btn-danger mr-12">Clear</button>
                         </div>
                     </div>
+                    {/* </form> */}
+
+                    
                 </div>
+
+                
 
                 <div className="col-md-6">
                     {/* map */}
