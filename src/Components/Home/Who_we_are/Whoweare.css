@@ -1,13 +1,6 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about{
-    margin: 0 !important;
-}
-
-section{
-    margin: 0 !important;
-}
 
 #whoweareText {
     text-align: center;
@@ -59,7 +52,6 @@ hr {
 .welogos {
     margin: 10px;
     background-color: rgb(130, 163, 163);
-    width: 10px;
     border-radius: 15px;
     text-align: center;
 }
@@ -69,7 +61,6 @@ hr {
 }
 
 .techcontainer {
-    text-align: center;
     padding-bottom: 5%;
 }
 
@@ -186,7 +177,7 @@ hr {
 }
 
 .icon{
-    width: 52px;
+    width: 55px;
 }
 
 
@@ -214,4 +205,12 @@ hr {
 
 .iconRow {
     text-align: center;
+}
+
+.techRow{
+    text-align: center;
+}
+
+.whotextRow{
+    margin-bottom: 3%;
 }
