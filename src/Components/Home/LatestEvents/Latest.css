@@ -84,6 +84,18 @@
     border-radius: 41px;
 }
 
-.arrow{
-    color: white;
+.iconsss{
+    /* background-color: aliceblue  !important; */
+    color: white !important;
+    height:100%;
+    width: 80px;
+    background-color: #01066B;
 }
+
+.iconsss:hover{
+    background-color: #02098e !important;
+    transition: 1s;
+}
+
+
+
