@@ -32,35 +32,32 @@ function WhoweareSection() {
     <section id="about" className="section about">
       <div className="container conwh">
 
-        <div className="row gy-3">
-          <div className="row gy-3">
+        <div>
+          <div className="row whotextRow">
             <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
             <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='whoweareText'>Who we are</p></div>
             <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
           </div>
 
-          <div className="row gy-3">
-            <div className="col-md-6 techcontainer" data-aos="fade-up" data-aos-delay="100">
-
-              <div className='row gy-3'>
-                <div className='col-2'></div>
-                <div className='col-md-4 welogos' onClick={() => setDisShow(true)}>
+          <div className="row">
+            <div className="col-md-5 techcontainer" data-aos="fade-up" data-aos-delay="100">
+              <div className='row'>
+                <div className='col-md welogos' onClick={() => setDisShow(true)}>
                   <div className='row'><img src={Dis} className='techimage' /></div>
                   <div className='row'><p className='techText'>Distribution</p></div>
                 </div>
-                <div className='col-md-4 welogos' onClick={() => setConShow(true)}>
+                <div className='col-md welogos' onClick={() => setConShow(true)}>
                   <div className='row'><img src={Con} className='techimage' /></div>
                   <div className='row'><p className='techText'>Consultancy</p></div>
                 </div>
               </div>
 
-              <div className='row gy-3'>
-                <div className='col-2'></div>
-                <div className='col-md-4 welogos' onClick={() => setTraShow(true)}>
+              <div className='row'>
+                <div className='col-md welogos' onClick={() => setTraShow(true)}>
                   <div className='row'><img src={Tra} className='techimage' /></div>
                   <div className='row'><p className='techText'>Training</p></div>
                 </div>
-                <div className='col-md-4 welogos' onClick={() => setTacShow(true)}>
+                <div className='col-md welogos' onClick={() => setTacShow(true)}>
                   <div className='row'><img src={Tac} className='techimage' /></div>
                   <div className='row'><p className='techText'>TAC Support</p></div>
                 </div>
