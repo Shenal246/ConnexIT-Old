@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-do
 import About from '../About/About';
 import Home from '../Home/Home';
 import Events from '../Events&News/Events';
+import ContactUs from '../ContactUs/Contact';
+
 function Navbar() {
 
   useEffect(() => {
@@ -85,7 +87,7 @@ function Navbar() {
               <NavLink to="" activeClassName='active-link' exact><img src={Logo} alt="Logo" /></NavLink>
             </a>
             <nav id="navmenu" className="navmenu">
-              <ul>
+              <ul class="no-bullets">
                 <NavLink to="/About" activeClassName='active-link' exact><li><a className="">About Us</a></li></NavLink>
                 <NavLink to="/About" activeClassName='active-link' exact><li><a className="">Products</a></li></NavLink>
                 <NavLink to="/About" activeClassName='active-link' exact><li><a className="">Solutions</a></li></NavLink>
@@ -93,11 +95,12 @@ function Navbar() {
                 <NavLink to="/About" activeClassName='active-link' exact><li><a className="">Portal</a></li></NavLink>
                 <NavLink to="/About" activeClassName='active-link' exact><li><a className="">Countries</a></li></NavLink>
 
-
               </ul>
               <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <a className="btn-getstarted" href="index.html#about">Contact Us</a>
+          
+            <NavLink to="/ContactUs" activeClassName='active-link' className="btn-getstarted" href="">Contact Us</NavLink>
+    
           </div>
         </header>
 
@@ -107,6 +110,9 @@ function Navbar() {
           <Route path="" exact Component={Home}></Route>
           <Route path="/About" exact Component={About}></Route>
           <Route path="/Events&News" exact Component={Events}></Route>
+          <Route path="/ContactUs" exact Component={ContactUs}></Route>
+          
+          
 
         </Routes>
 
