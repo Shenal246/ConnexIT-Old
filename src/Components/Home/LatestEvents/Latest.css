@@ -35,7 +35,7 @@
 }
 
 .cardContainer2 {
-    width: 100%;
+    
     border-radius: 5%;
     background-color: #01066B !important;
     margin-bottom: 2px;
@@ -47,7 +47,6 @@
 
 .image2{
     height: 150px;
-    width: 100px;
 }
 
 .cardBody {
