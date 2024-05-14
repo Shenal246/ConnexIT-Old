@@ -1,6 +1,6 @@
 import './Whoweare.css'
 import Modal from 'react-bootstrap/Modal';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 
 import Dis from '../../../images/tech/Distributer.png';
@@ -12,6 +12,11 @@ import Distribution from '../../../images/techImages/distribution.png'
 import Consultancy from '../../../images/techImages/consultancy.png';
 import Training from '../../../images/techImages/Training.png';
 import TacService from '../../../images/techImages/Tac.png';
+
+import icon1 from '../../../images/weicons/3.png';
+import icon2 from '../../../images/weicons/2.png';
+import icon3 from '../../../images/weicons/5.png';
+import icon4 from '../../../images/weicons/4.png';
 
 
 function WhoweareSection() {
@@ -35,15 +40,15 @@ function WhoweareSection() {
           </div>
 
           <div className="row gy-3">
-            <div className="col-lg-6 techcontainer" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-md-6 techcontainer" data-aos="fade-up" data-aos-delay="100">
 
               <div className='row gy-3'>
                 <div className='col-2'></div>
-                <div className='col-lg-4 welogos' onClick={() => setDisShow(true)}>
+                <div className='col-md-4 welogos' onClick={() => setDisShow(true)}>
                   <div className='row'><img src={Dis} className='techimage' /></div>
                   <div className='row'><p className='techText'>Distribution</p></div>
                 </div>
-                <div className='col-lg-4 welogos' onClick={() => setConShow(true)}>
+                <div className='col-md-4 welogos' onClick={() => setConShow(true)}>
                   <div className='row'><img src={Con} className='techimage' /></div>
                   <div className='row'><p className='techText'>Consultancy</p></div>
                 </div>
@@ -51,11 +56,11 @@ function WhoweareSection() {
 
               <div className='row gy-3'>
                 <div className='col-2'></div>
-                <div className='col-lg-4 welogos' onClick={() => setTraShow(true)}>
+                <div className='col-md-4 welogos' onClick={() => setTraShow(true)}>
                   <div className='row'><img src={Tra} className='techimage' /></div>
                   <div className='row'><p className='techText'>Training</p></div>
                 </div>
-                <div className='col-lg-4 welogos' onClick={() => setTacShow(true)}>
+                <div className='col-md-4 welogos' onClick={() => setTacShow(true)}>
                   <div className='row'><img src={Tac} className='techimage' /></div>
                   <div className='row'><p className='techText'>TAC Support</p></div>
                 </div>
@@ -63,7 +68,7 @@ function WhoweareSection() {
             </div>
 
 
-            <div className="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div className="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
               <div className="row" id='whText'>
                 <p >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literatum passage,literature, discovered the undoubtable source.</p>
@@ -71,16 +76,50 @@ function WhoweareSection() {
 
 
               <div className="row">
-                <div className='col-lg'>
+
+                <div className='col-md col-x iconCol'>
                   <div className='row'>
-                    <img src='' />
+                    <div className='icon-container'>
+                      <img src={icon1} />
+                    </div>
                   </div>
-                  <div className='row'>
+                  <div className='row textRow'>
+                    <p className='iconText'><span>2014</span>+ <br /> Founder</p>
                   </div>
                 </div>
-                <div className='col-lg'><div className='row'></div><div className='row'></div></div>
-                <div className='col-lg'><div className='row'></div><div className='row'></div></div>
-                <div className='col-lg'><div className='row'></div><div className='row'></div></div>
+
+                <div className='col-md iconCol'>
+                  <div className='row'>
+                    <div className='icon-container'>
+                      <img src={icon2} />
+                    </div>
+                  </div>
+                  <div className='row textRow'>
+                    <p className='iconText'><span>200</span>+ <br />Employees</p>
+                  </div>
+                </div>
+
+                <div className='col-md iconCol'>
+                  <div className='row'>
+                    <div className='icon-container'>
+                      <img src={icon3} className='icon' />
+                    </div>
+                  </div>
+                  <div className='row textRow'>
+                    <p className='iconText'><span>60</span>+ <br />Vendors</p>
+                  </div>
+                </div>
+
+                <div className='col-md iconCol'>
+                  <div className='row'>
+                    <div className='icon-container'>
+                      <img src={icon4} />
+                    </div>
+                  </div>
+                  <div className='row textRow'>
+                    <p className='iconText'><span>150</span>+ <br />Partners</p>
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -96,18 +135,18 @@ function WhoweareSection() {
         aria-labelledby="example-modal-sizes-title-lg"
         className='disModel'
       >
-        <Modal.Header closeButton className='model-header'>
+        <Modal.Header closeButton varient='white' className='model-header'>
           <Modal.Title id="example-modal-sizes-title-lg">
             Distribution
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className='model-body'>
           <div className='row'>
-            <div className='col-lg'>
+            <div className='col-md'>
               <p className='model-content-text'>Discover our tailor-made solutions, designed to meet end-users requirements with the most competitive, best-fitted answers for their unique needs.</p>
             </div>
 
-            <div className='col-lg'>
+            <div className='col-md'>
               <img src={Distribution} className='model-image' />
             </div>
           </div>
@@ -134,12 +173,12 @@ function WhoweareSection() {
         </Modal.Header>
         <Modal.Body className='model-body'>
           <div className='row'>
-            <div className='col-lg'>
+            <div className='col-md'>
               <p className='model-content-text'>Consultancy service is a unique solution offered by Connex, ensuring the most suitable and competitive solution for an end-user’s requirements. We offer an integrated customized service of consultancy skills that grows and changes with business and customer needs.
                 Connex consultancy provides highly qualified personnel to complement the skills of your own team. Our consultants and engineers act on your behalf to ensure the smooth running of customers’ installation, in a timely manner and according to budget implications.</p>
             </div>
 
-            <div className='col-lg'>
+            <div className='col-md'>
               <img src={Consultancy} className='model-image' />
             </div>
           </div>
@@ -166,7 +205,7 @@ function WhoweareSection() {
         </Modal.Header>
         <Modal.Body className='model-body'>
           <div className='row'>
-            <div className='col-lg'>
+            <div className='col-md'>
               <p className='model-content-text'>
                 We believe in the popular adage we are all lifelong learners, hence we strive to create a culture of learning where our employees are afforded numerous opportunities to further their professional development. We also groom our employees for future leadership positions from within the Company.
                 <br />
@@ -176,7 +215,7 @@ function WhoweareSection() {
               </p>
             </div>
 
-            <div className='col-lg'>
+            <div className='col-md'>
               <img src={Training} className='model-image' />
             </div>
           </div>
@@ -203,7 +242,7 @@ function WhoweareSection() {
         </Modal.Header>
         <Modal.Body className='model-body'>
           <div className='row'>
-            <div className='col-lg'>
+            <div className='col-md'>
               <p className='model-content-text'>
                 Connex offers 24/7 TAC services, with an array of certified, technical and qualified professionals. We are proud of Service Level Agreement levels of Bronze, Silver, Gold and Platinum.<br />
                 You will get to engage with your Product Manager who will share his understanding of the product, so you are fully informed and equipped with knowledge and the technical know how to use the product. Product research updates will also be shared along with information about deal registration.<br />
@@ -211,7 +250,7 @@ function WhoweareSection() {
               </p>
             </div>
 
-            <div className='col-lg'>
+            <div className='col-md'>
               <img src={TacService} className='model-image' />
             </div>
           </div>
