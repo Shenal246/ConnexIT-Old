@@ -35,7 +35,7 @@ function WhoweareSection() {
           </div>
 
           <div className="row gy-3">
-            <div className="col-lg-6 techcontainer " data-aos="fade-up" data-aos-delay="100">
+            <div className="col-lg-6 techcontainer" data-aos="fade-up" data-aos-delay="100">
 
               <div className='row gy-3'>
                 <div className='col-2'></div>
@@ -71,7 +71,13 @@ function WhoweareSection() {
 
 
               <div className="row">
-                <div className='col-lg'><div className='row'></div><div className='row'></div></div>
+                <div className='col-lg'>
+                  <div className='row'>
+                    <img src='' />
+                  </div>
+                  <div className='row'>
+                  </div>
+                </div>
                 <div className='col-lg'><div className='row'></div><div className='row'></div></div>
                 <div className='col-lg'><div className='row'></div><div className='row'></div></div>
                 <div className='col-lg'><div className='row'></div><div className='row'></div></div>

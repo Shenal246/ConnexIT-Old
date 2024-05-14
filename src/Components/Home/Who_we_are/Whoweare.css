@@ -119,48 +119,77 @@ hr {
     width: 70% !important;
 }
 
-.techText{
-    font-size:large;
+.techText {
+    font-size: large;
     color: rgb(4, 29, 61);
     font-weight: bold;
 }
 
 /* Model */
-.disModel{
+.disModel {
     background-color: rgba(108, 204, 204, 0.2);
 }
 
-.model-header{
+.model-header {
     background-color: #01066B;
     color: white;
 }
 
-.model-body{
+.model-body {
     background-color: #C9CBF9;
 }
 
-.model-content-text{
+.model-content-text {
     font-weight: bolder;
 }
 
-.model-image{
+.model-image {
     padding-top: 5%;
     padding-bottom: 5%;
     width: 80%;
     height: auto;
 }
 
-.contactUs-button{
+.contactUs-button {
     background-color: #01066B !important;
     border: none;
     color: white;
     width: 20%;
 }
 
-.contactUs-button:hover{
+.contactUs-button:hover {
     background-color: #0810af !important;
 }
 
-.model-footer{
+.model-footer {
     background-color: #C9CBF9 !important;
+}
+
+
+@media (max-width: 640px) {
+    .welogos {
+        margin: 10px;
+        background-color: rgb(130, 163, 163);
+        width: 35% !important;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .techcontainer {
+        text-align: justify !important;
+        padding-bottom: 5%;
+    }
+
+    #whText {
+        color: #499FEE;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .conwh {
+        text-align: center;
+    }
 }
