@@ -75,12 +75,12 @@ function WhoweareSection() {
               </div>
 
 
-              <div className="row">
+              <div className="row iconRow">
 
-                <div className='col-md col-x iconCol'>
+                <div className='col iconCol'>
                   <div className='row'>
                     <div className='icon-container'>
-                      <img src={icon1} />
+                      <img src={icon1} className='iconMob' />
                     </div>
                   </div>
                   <div className='row textRow'>
@@ -88,10 +88,10 @@ function WhoweareSection() {
                   </div>
                 </div>
 
-                <div className='col-md iconCol'>
+                <div className='col iconCol'>
                   <div className='row'>
                     <div className='icon-container'>
-                      <img src={icon2} />
+                      <img src={icon2} className='iconMob' />
                     </div>
                   </div>
                   <div className='row textRow'>
@@ -99,10 +99,10 @@ function WhoweareSection() {
                   </div>
                 </div>
 
-                <div className='col-md iconCol'>
+                <div className='col iconCol'>
                   <div className='row'>
                     <div className='icon-container'>
-                      <img src={icon3} className='icon' />
+                      <img src={icon3} className='icon iconMob' />
                     </div>
                   </div>
                   <div className='row textRow'>
@@ -110,16 +110,21 @@ function WhoweareSection() {
                   </div>
                 </div>
 
-                <div className='col-md iconCol'>
+                <div className='col iconCol'>
                   <div className='row'>
                     <div className='icon-container'>
-                      <img src={icon4} />
+                      <img src={icon4} className='iconMob' />
                     </div>
                   </div>
                   <div className='row textRow'>
                     <p className='iconText'><span>150</span>+ <br />Partners</p>
                   </div>
                 </div>
+
+                {/* <div className='col'>
+                  
+                </div> */}
+
               </div>
 
             </div>

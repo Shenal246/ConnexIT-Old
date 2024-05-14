@@ -1,52 +1,8 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .about-content h3 {
-    font-weight: 700;
-    font-size: 26px;
-}
-
-.about .about-content ul {
-    list-style: none;
-    padding: 0;
-}
-
-.about .about-content ul li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 35px;
-}
-
-.about .about-content ul li:first-child {
-    margin-top: 35px;
-}
-
-.about .about-content ul i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 64px;
-    height: 64px;
-    font-size: 32px;
-    color: #fff;
-    background: var(--accent-color);
-    margin-right: 15px;
-    line-height: 0;
-    border-radius: 5px;
-}
-
-.about .about-content ul h4 {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.about .about-content ul p {
-    font-size: 15px;
-}
-
-.about .about-content p:last-child {
-    margin-bottom: 0;
+.about{
+    margin: 0 !important;
 }
 
 #whoweareText {
@@ -193,29 +149,61 @@ hr {
     .conwh {
         text-align: center;
     }
+
+    .iconMob {
+        width: 50px;
+    }
+
+    .iconText {
+        font-size: 16px !important;
+        color: white;
+        padding-top: 10px;
+    }
+
+    .iconCol {
+        margin: 2px !important;
+    }
+
+    .icon-container {
+        background-color: rgba(172, 189, 189, 0.3);
+        padding: 5%;
+        border-radius: 15%;
+        height: 80px;
+        align-items: center !important;
+    }
+
 }
 
-.icon{
-    width: 52px;
+@media (max-width: 1440px) {
+    .icon{
+        width: 52px;
+    }
+
 }
 
-.icon-container{
-    background-color: rgba(172, 189, 189,0.3);
+
+
+.icon-container {
+    background-color: rgba(172, 189, 189, 0.3);
     padding: 10%;
     border-radius: 15%;
     text-align: center;
 }
 
-.iconCol{
+.iconCol {
     margin: 10px;
 }
 
-.iconText{
+.iconText {
     font-size: 20px;
     color: white;
-    padding-top:10px ;
+    padding-top: 10px;
 }
 
-.textRow{
+.textRow {
+    text-align: center;
+}
+
+.iconRow {
     text-align: center;
 }
