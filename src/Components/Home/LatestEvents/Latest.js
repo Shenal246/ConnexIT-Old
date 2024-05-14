@@ -17,24 +17,24 @@ const Latest = () => {
                 <div className='row gy-3'>
                     <div className='col-lg-7'>
                         <Card className='cardContainer1'>
-                            <Card.Img variant="top" src={Latest1} className='image1'/>
+                            <Card.Img variant="top" src={Latest1} className='image1' />
                             <Card.Body className='cardBody'>
                                 <Card.Title>Card Title</Card.Title>
                             </Card.Body>
                         </Card>
                     </div>
-                    <div className='col-lg-3'>
-                        <div className='row image2row'>
-                        <Card className='cardContainer2'>
+                    <div className='col-lg-3 col-xs-1'>
+                        <div className='row'>
+                            <Card className='cardContainer2'>
                                 <Card.Img variant="top" src={Latest1} className='image2' />
                                 <Card.Body className='cardBody2'>
                                     <Card.Title>Card Title</Card.Title>
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div className='row'>
+                        <div className='row '>
                             <Card className='cardContainer2'>
-                                <Card.Img variant="top" src={Latest1} className='image2'/>
+                                <Card.Img variant="top" src={Latest1} className='image2' />
                                 <Card.Body className='cardBody2'>
                                     <Card.Title>Card Title</Card.Title>
                                 </Card.Body>
@@ -42,7 +42,7 @@ const Latest = () => {
                         </div>
                     </div>
                     <div className='col-1 navigation'>
-sdf
+                        sdf
                     </div>
                 </div>
             </div>

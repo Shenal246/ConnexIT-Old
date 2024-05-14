@@ -35,10 +35,13 @@
 }
 
 .cardContainer2 {
-    width: 100%;
+    
     border-radius: 5%;
     background-color: #01066B !important;
-    margin-bottom: 10px;
+    margin-bottom:15px ;
+    margin-left:5px ;
+    margin-right:5px ;
+    
 }
 
 .image1{
@@ -47,7 +50,6 @@
 
 .image2{
     height: 150px;
-    width: 100px;
 }
 
 .cardBody {
