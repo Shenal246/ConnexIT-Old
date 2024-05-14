@@ -2,6 +2,8 @@ import './Whoweare.css'
 import Modal from 'react-bootstrap/Modal';
 import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 
 import Dis from '../../../images/tech/Distributer.png';
 import Con from '../../../images/tech/Consultancy.png';
@@ -28,6 +30,8 @@ function WhoweareSection() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const [counterOn, setCounterOn] = useState(false);
+
   return (
     <section id="about" className="section about">
       <div className="container conwh">
@@ -39,93 +43,95 @@ function WhoweareSection() {
             <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
           </div>
 
-          <div className="row">
-            <div className="col-md-5 techcontainer" data-aos="fade-up" data-aos-delay="100">
-              <div className='row'>
-                <div className='col-md welogos' onClick={() => setDisShow(true)}>
-                  <div className='row'><img src={Dis} className='techimage' /></div>
-                  <div className='row'><p className='techText'>Distribution</p></div>
+          <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+            <div className="row">
+              <div className="col-md-5 techcontainer" data-aos="fade-up" data-aos-delay="100">
+                <div className='row'>
+                  <div className='col-md welogos' onClick={() => setDisShow(true)}>
+                    <div className='row'><img src={Dis} className='techimage' /></div>
+                    <div className='row'><p className='techText'>Distribution</p></div>
+                  </div>
+                  <div className='col-md welogos' onClick={() => setConShow(true)}>
+                    <div className='row'><img src={Con} className='techimage' /></div>
+                    <div className='row'><p className='techText'>Consultancy</p></div>
+                  </div>
                 </div>
-                <div className='col-md welogos' onClick={() => setConShow(true)}>
-                  <div className='row'><img src={Con} className='techimage' /></div>
-                  <div className='row'><p className='techText'>Consultancy</p></div>
+
+                <div className='row'>
+                  <div className='col-md welogos' onClick={() => setTraShow(true)}>
+                    <div className='row'><img src={Tra} className='techimage' /></div>
+                    <div className='row'><p className='techText'>Training</p></div>
+                  </div>
+                  <div className='col-md welogos' onClick={() => setTacShow(true)}>
+                    <div className='row'><img src={Tac} className='techimage' /></div>
+                    <div className='row'><p className='techText'>TAC Support</p></div>
+                  </div>
                 </div>
               </div>
 
-              <div className='row'>
-                <div className='col-md welogos' onClick={() => setTraShow(true)}>
-                  <div className='row'><img src={Tra} className='techimage' /></div>
-                  <div className='row'><p className='techText'>Training</p></div>
+
+              <div className="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                <div className="row" id='whText'>
+                  <p >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literatum passage,literature, discovered the undoubtable source.</p>
                 </div>
-                <div className='col-md welogos' onClick={() => setTacShow(true)}>
-                  <div className='row'><img src={Tac} className='techimage' /></div>
-                  <div className='row'><p className='techText'>TAC Support</p></div>
-                </div>
-              </div>
-            </div>
 
 
-            <div className="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div className="row iconRow">
 
-              <div className="row" id='whText'>
-                <p >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literatum passage,literature, discovered the undoubtable source.</p>
-              </div>
-
-
-              <div className="row iconRow">
-
-                <div className='col iconCol'>
-                  <div className='row'>
-                    <div className='icon-container'>
-                      <img src={icon1} className='iconMob' />
+                  <div className='col iconCol'>
+                    <div className='row'>
+                      <div className='icon-container'>
+                        <img src={icon1} className='iconMob' />
+                      </div>
+                    </div>
+                    <div className='row textRow'>
+                      <p className='iconText'>{counterOn && <CountUp start={0} end={2014} duration={2} delay={0} separator="" />}+<br /> Founder</p>
                     </div>
                   </div>
-                  <div className='row textRow'>
-                    <p className='iconText'><span>2014</span>+ <br /> Founder</p>
-                  </div>
-                </div>
 
-                <div className='col iconCol'>
-                  <div className='row'>
-                    <div className='icon-container'>
-                      <img src={icon2} className='iconMob' />
+                  <div className='col iconCol'>
+                    <div className='row'>
+                      <div className='icon-container'>
+                        <img src={icon2} className='iconMob' />
+                      </div>
+                    </div>
+                    <div className='row textRow'>
+                      <p className='iconText'>{counterOn && <CountUp start={0} end={200} duration={3} delay={0} />}+ <br />Employees</p>
                     </div>
                   </div>
-                  <div className='row textRow'>
-                    <p className='iconText'><span>200</span>+ <br />Employees</p>
-                  </div>
-                </div>
 
-                <div className='col iconCol'>
-                  <div className='row'>
-                    <div className='icon-container'>
-                      <img src={icon3} className='icon iconMob' />
+                  <div className='col iconCol'>
+                    <div className='row'>
+                      <div className='icon-container'>
+                        <img src={icon3} className='icon iconMob' />
+                      </div>
+                    </div>
+                    <div className='row textRow'>
+                      <p className='iconText'>{counterOn && <CountUp start={0} end={60} duration={3} delay={0} />}+ <br />Vendors</p>
                     </div>
                   </div>
-                  <div className='row textRow'>
-                    <p className='iconText'><span>60</span>+ <br />Vendors</p>
-                  </div>
-                </div>
 
-                <div className='col iconCol'>
-                  <div className='row'>
-                    <div className='icon-container'>
-                      <img src={icon4} className='iconMob' />
+                  <div className='col iconCol'>
+                    <div className='row'>
+                      <div className='icon-container'>
+                        <img src={icon4} className='iconMob' />
+                      </div>
+                    </div>
+                    <div className='row textRow'>
+                      <p className='iconText'>{counterOn && <CountUp start={0} end={150} duration={3} delay={0} />}+ <br />Partners</p>
                     </div>
                   </div>
-                  <div className='row textRow'>
-                    <p className='iconText'><span>150</span>+ <br />Partners</p>
-                  </div>
-                </div>
 
-                {/* <div className='col'>
+                  {/* <div className='col'>
                   
-                </div> */}
+                  </div> */}
+
+                </div>
 
               </div>
-
             </div>
-          </div>
+          </ScrollTrigger>
         </div>
       </div>
 
