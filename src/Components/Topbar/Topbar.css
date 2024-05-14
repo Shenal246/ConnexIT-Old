@@ -2,7 +2,7 @@
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-    background: #106eea;
+    background: rgba(16, 110, 234,0.2);
     height: 40px;
     font-size: 14px;
     transition: all 0.5s;
