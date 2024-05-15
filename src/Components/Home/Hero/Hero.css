@@ -6,8 +6,8 @@
     width: 100%;
     min-height: 70vh;
     position: relative;
-    /* padding: 120px 0 60px 0; */
-    padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgba(var(--accent-color-rgb), 0.25);
@@ -119,7 +119,12 @@ h3{
     .settop{
         margin-top: -20%;
     }
+
+    .hero{
+        padding-top: 10px !important;
+    }
 }
+
 
 @keyframes up-down {
     0% {
