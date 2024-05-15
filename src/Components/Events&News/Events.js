@@ -15,11 +15,11 @@ const Events = () => {
 
     return (
         <div className="container">
-            <div className='row'>
+            <div className='row' data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                 <div className="row gy-3 text">
-                    <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
-                    <div className="col-4" data-aos="fade-up" data-aos-delay="100"><p id='EventsText'>Events & News</p></div>
-                    <div className="col-4" data-aos="fade-up" data-aos-delay="100"><hr /></div>
+                    <div className="col-4"><hr /></div>
+                    <div className="col-4"><p id='EventsText'>Events & News</p></div>
+                    <div className="col-4"><hr /></div>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@ const Events = () => {
                     <div className="modal-content modalClr">
                         <div className="modal-header">
                             {/* <h5 className="modal-title" id="videoModalLabel">Video Title</h5> */}
-                            <button type="button" className="btn-close close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" className="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
                             <video controls ref={videoRef} style={{ width: '100%' }}>
